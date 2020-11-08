@@ -11,7 +11,7 @@ def home():
     return render_template("index.html")
     # return hello 
     
-@app.route("/predict", method = ["POST"])
+@app.route("/predict", methods = ["POST"])
 
 def predict():
     #takes the html input
