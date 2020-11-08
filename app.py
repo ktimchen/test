@@ -15,7 +15,7 @@ def home():
 
 def predict():
     #takes the html input
-    int_feature = [int(x) for x in request_form.values()]
+    int_feature = [int(x) for x in request.form.values()]
     # make it an array
     final_feature = [np.array(int_feature)]
     
